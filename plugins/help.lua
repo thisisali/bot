@@ -50,7 +50,7 @@ local function do_keybaord_credits()
     		{text = 'Channel', url = 'https://telegram.me/'..config.channel:gsub('@', '')},
     		{text = 'PM Bot', url = 'https://telegram.me/ali_ghoghnoos_bot'},
     		{text = 'Rate me!', url = 'https://telegram.me/storebot?start='..bot.username},
-    		[{text = 'Chat With me!', url = 'https://telegram.me/storebot?start='..bot.username}],
+    		{text = 'Chat With me!', url = 'https://telegram.me/storebot?start='..bot.username},
 		},
 		{
 		    {text = '🔙Back', callback_data = '!user'}

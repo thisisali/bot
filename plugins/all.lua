@@ -154,7 +154,7 @@ local action = function(msg, blocks, ln)
             return
         end
     end
-    if blocks[1] == 'menu' then
+    if blocks[1] == 'settings' then
         if not(msg.chat.type == 'private') and not msg.cb then
             if not is_mod(msg) then return end --only mods can use this
             keyboard = doKeyboard_menu(chat_id)
@@ -206,7 +206,7 @@ return {
 	action = action,
 	triggers = {
 		'^/(dashboard)$',
-		'^/(menu)$',
+		'^/(settings)$',
 		'^/(media)$',
 		'^###cb:(dashboard)(settings)//',
     	'^###cb:(dashboard)(rules)//',
@@ -214,19 +214,19 @@ return {
 	    '^###cb:(dashboard)(modlist)//',
 	    '^###cb:(dashboard)(extra)//',
 	    '^###cb:(dashboard)(welcome)//',
-    	'^###cb:(menu)(alert)//',
-    	'^###cb:(menu)(Rules)//',
-    	'^###cb:(menu)(About)//',
-    	'^###cb:(menu)(Modlist)//',
-    	'^###cb:(menu)(Rtl)//',
-    	'^###cb:(menu)(Arab)//',
-    	'^###cb:(menu)(Report)//',
-    	'^###cb:(menu)(Welcome)//',
-    	'^###cb:(menu)(Extra)//',
-    	'^###cb:(menu)(Flood)//',
-    	'^###cb:(menu)(DimFlood)//',
-    	'^###cb:(menu)(RaiseFlood)//',
-    	'^###cb:(menu)(ActionFlood)//',
+    	'^###cb:(settings)(alert)//',
+    	'^###cb:(settings)(Rules)//',
+    	'^###cb:(settings)(About)//',
+    	'^###cb:(settings)(Modlist)//',
+    	'^###cb:(settings)(Rtl)//',
+    	'^###cb:(settings)(Arab)//',
+    	'^###cb:(settings)(Report)//',
+    	'^###cb:(settings)(Welcome)//',
+    	'^###cb:(settings)(Extra)//',
+    	'^###cb:(settings)(Flood)//',
+    	'^###cb:(settings)(DimFlood)//',
+    	'^###cb:(settings)(RaiseFlood)//',
+    	'^###cb:(settings)(ActionFlood)//',
     	'^###cb:(media)(image)//',
     	'^###cb:(media)(audio)//',
     	'^###cb:(media)(video)//',

@@ -206,7 +206,7 @@ return {
 	action = action,
 	triggers = {
 		'^/(dashboard)$',
-		'^/(settings)$',
+		'^/(menu)$',
 		'^/(media)$',
 		'^###cb:(dashboard)(settings)//',
     	'^###cb:(dashboard)(rules)//',

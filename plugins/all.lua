@@ -127,7 +127,7 @@ local action = function(msg, blocks, ln)
         if msg.cb then
             local text
             keyboard = doKeyboard_dashboard(chat_id)
-            if blocks[2] == 'settings' then
+            if blocks[2] == 'menu' then
                 text = cross.getSettings(chat_id, ln)
             end
             if blocks[2] == 'rules' then
@@ -214,19 +214,19 @@ return {
 	    '^###cb:(dashboard)(modlist)//',
 	    '^###cb:(dashboard)(extra)//',
 	    '^###cb:(dashboard)(welcome)//',
-    	'^###cb:(settings)(alert)//',
-    	'^###cb:(settings)(Rules)//',
-    	'^###cb:(settings)(About)//',
-    	'^###cb:(settings)(Modlist)//',
-    	'^###cb:(settings)(Rtl)//',
-    	'^###cb:(settings)(Arab)//',
-    	'^###cb:(settings)(Report)//',
-    	'^###cb:(settings)(Welcome)//',
-    	'^###cb:(settings)(Extra)//',
-    	'^###cb:(settings)(Flood)//',
-    	'^###cb:(settings)(DimFlood)//',
-    	'^###cb:(settings)(RaiseFlood)//',
-    	'^###cb:(settings)(ActionFlood)//',
+    	'^###cb:(menu)(alert)//',
+    	'^###cb:(menu)(Rules)//',
+    	'^###cb:(menu)(About)//',
+    	'^###cb:(menu)(Modlist)//',
+    	'^###cb:(menu)(Rtl)//',
+    	'^###cb:(menu)(Arab)//',
+    	'^###cb:(menu)(Report)//',
+    	'^###cb:(menu)(Welcome)//',
+    	'^###cb:(menu)(Extra)//',
+    	'^###cb:(menu)(Flood)//',
+    	'^###cb:(menu)(DimFlood)//',
+    	'^###cb:(menu)(RaiseFlood)//',
+    	'^###cb:(menu)(ActionFlood)//',
     	'^###cb:(media)(image)//',
     	'^###cb:(media)(audio)//',
     	'^###cb:(media)(video)//',

@@ -47,12 +47,12 @@ local function do_keybaord_credits()
 	local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = 'Channel', url = 'https://telegram.me/'..config.channel:gsub('@', '')},
-    		{text = 'Chat!', url = 'https://telegram.me/storebot?start='..bot.username},
+    		{text = 'Our Channel', url = 'https://telegram.me/'..config.channel:gsub('@', '')},
+    		{text = 'Chat To me', url = 'https://telegram.me/storebot?start='..bot.username},
     		},
 		{
     		{text = 'PM Bot', url = 'https://telegram.me/ali_ghoghnoos_bot'},
-    		{text = 'Rate me!', url = 'https://telegram.me/storebot?start='..bot.username},
+    		{text = 'Rate Bot!', url = 'https://telegram.me/storebot?start='..bot.username},
 		},
 		{
 		    {text = '🔙Back', callback_data = '!user'}
@@ -125,7 +125,7 @@ local action = function(msg, blocks, ln)
         local with_mods_lines = true
         if query == 'user' then
             text = lang[ln].help.all
-            with_mods_lines = false
+      --      with_mods_lines = false
         elseif query == 'mod' then
             text = lang[ln].help.kb_header
         end

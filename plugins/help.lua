@@ -3,17 +3,17 @@ local function make_keyboard(mod)
 	keyboard.inline_keyboard = {}
 	if mod then --extra options for the mod
 	    local list = {
-	        ['Banhammer'] = '!banhammer',
+	        ['Ban Commands'] = '!banhammer',
 	        ['Group info'] = '!info',
-	        ['Flood manager'] = '!flood',
-	        ['Media settings'] = '!media',
-	        ['Welcome settings'] = '!welcome',
+	        ['Anti Flood'] = '!flood',
+	      --  ['Media settings'] = '!media',
+	        ['Welcome Options'] = '!welcome',
 	        ['General settings'] = '!settings',
-	        ['Extra commands'] = '!extra',
+	      --  ['Extra commands'] = '!extra',
 	        ['Warns'] = '!warns',
-	        ['Characters strictness'] = '!char',
-	        ['Links'] = '!links',
-	        ['Languages'] = '!lang'
+	      --  ['Characters strictness'] = '!char',
+	        ['Poll Bot'] = '!links',
+	      --  ['Languages'] = '!lang'
         }
         local line = {}
         for k,v in pairs(list) do

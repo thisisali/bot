@@ -12,7 +12,7 @@ local function make_keyboard(mod)
 	      --  ['Extra commands'] = '!extra',
 	        ['Warns'] = '!warns',
 	      --  ['Characters strictness'] = '!char',
-	        ['Poll Bot'] = '!links',
+	        ['Link Options'] = '!links',
 	      --  ['Languages'] = '!lang'
         }
         local line = {}
@@ -50,6 +50,7 @@ local function do_keybaord_credits()
     		{text = 'Channel', url = 'https://telegram.me/'..config.channel:gsub('@', '')},
     		{text = 'PM Bot', url = 'https://telegram.me/ali_ghoghnoos_bot'},
     		{text = 'Rate me!', url = 'https://telegram.me/storebot?start='..bot.username},
+    		[{text = 'Chat With me!', url = 'https://telegram.me/storebot?start='..bot.username}],
 		},
 		{
 		    {text = '🔙Back', callback_data = '!user'}

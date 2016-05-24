@@ -127,7 +127,7 @@ local action = function(msg, blocks, ln)
         if msg.cb then
             local text
             keyboard = doKeyboard_dashboard(chat_id)
-            if blocks[2] == 'menu' then
+            if blocks[2] == 'settings' then
                 text = cross.getSettings(chat_id, ln)
             end
             if blocks[2] == 'rules' then
@@ -154,7 +154,7 @@ local action = function(msg, blocks, ln)
             return
         end
     end
-    if blocks[1] == 'settings' then
+    if blocks[1] == 'menu' then
         if not(msg.chat.type == 'private') and not msg.cb then
             if not is_mod(msg) then return end --only mods can use this
             keyboard = doKeyboard_menu(chat_id)
